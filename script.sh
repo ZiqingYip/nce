@@ -8,4 +8,4 @@ cat contents_of_NCE3.txt |
 	sort |  # 排序
 	uniq -c |  # 去重，并统计每个单词的出现次数（即词频）
 	awk '{print $2, $1}' |  # 调换单词和词频的位置
-	sort -rnk2 -k1 > word_count_of_NCE3.txt  # 把词频逆序排序，并通过重定向输出到文件中
+	sort -rnk2 -k1 > word_count_of_NCE3.txt  # 按词频从大到小排序，并通过重定向输出到文件中
